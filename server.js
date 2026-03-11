@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const Student = require("./models/student");
+const Student = require("./models/Student");
 
 const app = express();
 
@@ -118,3 +118,4 @@ app.listen(process.env.PORT, () => {
     console.log("Server running on port " + process.env.PORT);
 
 });
+
