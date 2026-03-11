@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const Student = require("./models/student.model");
+const Student = require("./models/student");
 
 const app = express();
 
@@ -116,4 +116,5 @@ app.delete("/students/:id", async (req, res) => {
 // Start Server
 app.listen(process.env.PORT, () => {
     console.log("Server running on port " + process.env.PORT);
+
 });
